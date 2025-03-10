@@ -1,0 +1,96 @@
+/* Auth.css */
+
+.auth-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,
+select,
+button {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+input:focus,
+select:focus,
+button:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+input[type="file"] {
+  padding: 5px;
+  font-size: 0.9rem;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.error {
+  color: #ff0000;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+select {
+  font-size: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  font-size: 1rem;
+}
+
+input::placeholder,
+select::placeholder {
+  color: #aaa;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .auth-container {
+      padding: 15px;
+  }
+
+  h2 {
+      font-size: 1.2rem;
+  }
+
+  input,
+  select,
+  button {
+      font-size: 0.9rem;
+  }
+}
